@@ -3,3 +3,10 @@
     font-size: 20px;
     font-weight: bold; /* жирный текст */
 }
+
+#magic {
+    color: #27d3ff;
+    font-size: 25px;
+    background-image: url("https://mobimg.b-cdn.net/v3/fetch/d4/d446d22e6f1bfb4b17007a4be4809d6f.jpeg");
+    background-size: cover; /* растягиваем картинку по экрану */
+}
