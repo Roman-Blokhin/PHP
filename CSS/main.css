@@ -10,3 +10,13 @@
     background-image: url("https://mobimg.b-cdn.net/v3/fetch/d4/d446d22e6f1bfb4b17007a4be4809d6f.jpeg");
     background-size: cover; /* растягиваем картинку по экрану */
 }
+
+p {
+    color: #ff0931;
+    font-weight: bold;
+    font-size: large;
+}
+
+#mag {
+    background: darkgrey;
+}
