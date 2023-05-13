@@ -20,3 +20,10 @@ p {
 #mag {
     background: darkgrey;
 }
+
+.deffence {
+    background: url("https://wallpapercrafter.com/sizes/2048x1152/133657-simple-background-minimalism-Moon-rocket.jpg");
+    background-size: cover;
+    color: white;
+    font-size: xxx-large;
+}
