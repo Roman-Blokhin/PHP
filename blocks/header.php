@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHP lesson nine</title>
+    <title> <?=$title;?> </title> <!-- прописывает переменную, которая установлена у нас во всех файлах со своим значением
+    код php можно записать сокращенно, как: <?=$title;?> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
