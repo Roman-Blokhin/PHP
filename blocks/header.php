@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="ru"
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,8 +16,8 @@
     <!-- обязательно пропичсываем хедер и ссылки прикрепленных файлов в нем -->
 
     <!-- в шапке мы создаем ссылку: href="/" - на этот же файл, все равно, что мы прописали бы: lesson_9.php -->
-    <a href="/lesson_9.php">Главная</a> |
+    <a href="lesson_9.php">Главная</a>
     <!-- также мы создаем ссылку на другой файл: about.php, через символ '|' -->
-    <a href="/about.php">Про нас</a> |
-    <a href="/contacts.php">Контакты</a>
+    <a href="about.php">Про нас</a>
+    <a href="contacts.php">Контакты</a>
 </header>
