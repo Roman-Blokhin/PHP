@@ -74,6 +74,29 @@
     print_r($array_3);
     echo "<br>";
 
+    // 19. мы можем проверить тип переменной
+    $var = 10;
+    echo gettype($var);
+    echo "<br>";
+
+    echo is_numeric($var); // 20. проверяем, является ли переменная числом, True = 1, False = "", переменная "10" будет числом
+    echo "<br>";
+
+    echo is_double($var); // 21. проверяем тип, является ли переменная числом с точкой, True = 1, False = ""
+    echo "<br>";
+
+    echo is_string($var); // 22. проверяем тип, является ли переменная строкой, True = 1, False = ""
+    echo "<br>";
+
+    echo is_bool($var); // 23. проверяем тип, является ли переменная булевым значением, True = 1, False = ""
+    echo "<br>";
+
+    echo is_array($var); // 24. проверяем тип, является ли переменная массивом, True = 1, False = ""
+    echo "<br>";
+
+    echo is_integer($var); // 25. проверяем тип, является ли переменная числом, True = 1, False = ""
+    echo "<br>";
+
 ?>
 
 <?php
