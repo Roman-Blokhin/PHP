@@ -62,7 +62,7 @@ print_r (_$POST) и используем метод $_POST
 
     // 15. создаем файл, в котором будем хранить все данные, переданные через форму обратной связи
     $file = fopen ("fb.txt", "a");
-    fwrite($file, "$name\n$email\n$password\n\n");
+    fwrite($file, "\n$name\n$email\n$password\n\n");
     fclose($file);
 
     /* fopen() - открывает файл, который мы указываем, если его нет, то создает. Второй параметр - a,
