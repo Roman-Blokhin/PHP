@@ -20,4 +20,5 @@
     <!-- также мы создаем ссылку на другой файл: about.php, через символ '|' -->
     <a href="about.php">Про нас</a>
     <a href="contacts.php">Контакты</a>
+    <a href="lessons.php">Уроки</a>
 </header>
