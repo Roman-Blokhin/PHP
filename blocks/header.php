@@ -22,4 +22,5 @@
             <a href="about.php">Про нас</a>
             <a href="contacts.php">Контакты</a>
             <a href="lessons.php">Уроки</a>
+            <a href="feedback.php">Обратная связь</a>
         </header>
