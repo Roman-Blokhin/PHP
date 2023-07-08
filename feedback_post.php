@@ -17,14 +17,15 @@
     // напишем проверки для полей ввода данных
 
     if (strlen($user_name) <= 1) {
-        $error_username = "Введите корректное имя";
+        $_SESSION ["error_username"] = "Введите корректное имя"; /* если возникает ошибка, то мы устанавливаем это значение внутри сессии, 
+        чтобы вывести их в форме обратной связи */
     }
     else if (strlen($user_email) < 5 || strpos($user_email, "@") == false) { // strpos - ищет в переменной конкретный символ
-        $error_email = "Введите корректный email";
+        $_SESSION ["error_email"] = "Введите корректный email";
     }
     else if (strlen($user_theme) < 5) {
-        $error_user_theme = "Тема менее 5 символов";
+        $_SESSION ["error_user_theme"] = "Тема менее 5 символов";
     }
     else if (strlen($message) < 15) {
-        $error_message = "Сообщение менее 15 символов";
+        $_SESSION ["error_message"] = "Сообщение менее 15 символов";
     }
