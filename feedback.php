@@ -6,6 +6,13 @@
 
 <h1 class="mt-5">Обратная связь</h1> <!-- class="mt-5" от bootstrap дает нам отступ сверху -->
 
+<!-- делаем форму уведомления об отправке письма -->
+
+<!-- класс text-success от bootstrap, который придает тексту зеленый цвет -->
+<div class="text-success"><?=$_SESSION['success_mail']?></div>
+<!-- прописываем сессию, которая выводит подтверждение отправки письма, прописана на странице feedback_post.php -->
+
+
 <!-- value="" нам нужен для того, чтобы значение переданное в сессии оставалось в поле ввода после обработки данных -->
 
 <form action="feedback_post.php" method="post">
@@ -29,5 +36,17 @@
 </form>
 
 <?php
+
+    unset ($_SESSION ["user__name"]); // при заходе на страницу/перезагрузке, сессии будут очищаться + очистятся поля ввода
+    unset ($_SESSION ["usere__mail"]);
+    unset ($_SESSION ["text__theme"]);
+    unset ($_SESSION ["message__"]);
+
+    unset ($_SESSION ["error_username"]);
+    unset ($_SESSION ["error_email"]);
+    unset ($_SESSION ["error_user_theme"]);
+    unset ($_SESSION ["error_message"]);
+    unset ($_SESSION["success_mail"]);
+
     require "blocks/footer.php";
 ?>

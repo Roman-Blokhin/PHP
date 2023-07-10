@@ -3,16 +3,6 @@
 <?php
     session_start(); // запускаем сессии
 
-    unset ($_SESSION ["user__name"]); // при заходе на страницу сессии будут очищаться + очистятся поля ввода
-    unset ($_SESSION ["usere__mail"]);
-    unset ($_SESSION ["text__theme"]);
-    unset ($_SESSION ["message__"]);
-
-    unset ($_SESSION ["error_username"]);
-    unset ($_SESSION ["error_email"]);
-    unset ($_SESSION ["error_user_theme"]);
-    unset ($_SESSION ["error_message"]);
-
     function redirect() { // прописываем функуию для возврата на страницу обратной связи после обработки данных
         header('Location: feedback.php');
         exit;
@@ -50,5 +40,11 @@
         redirect();
     }
     else {
+        // нам остается отправить письмо на почту
+
+        $user_theme = "=?utf-8?B?".base64_encode($user_theme)."?="; // указываем кодировку темы
+        $headers = "From: $user_email\r\nReply-to: $user_email\r\nContent-type: text/plain; charset=utf-8\r\n ";
+        mail("11-roman@mail.ru", $user_theme, $message, $headers);
+        $_SESSION["success_mail"] = "Вы успешно отправили письмо"; // новая сессия для пользователя с подтверждением отправки письма
         redirect();
     }
